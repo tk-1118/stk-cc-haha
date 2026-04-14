@@ -7,6 +7,10 @@
     "claude-haha": "./bin/claude-haha.mjs"
   },
   "scripts": {
+    "env:sync": "node ./scripts/sync-env.mjs",
+    "env:sync:glm": "node ./scripts/sync-env.mjs --keys=ANTHROPIC_AUTH_TOKEN,ANTHROPIC_BASE_URL,ANTHROPIC_MODEL,ANTHROPIC_DEFAULT_SONNET_MODEL,ANTHROPIC_DEFAULT_HAIKU_MODEL,ANTHROPIC_DEFAULT_OPUS_MODEL,API_TIMEOUT_MS",
+    "env:sync-win": "node ./scripts/sync-env.mjs",
+    "env:sync-win:glm": "node ./scripts/sync-env.mjs --keys=ANTHROPIC_AUTH_TOKEN,ANTHROPIC_BASE_URL,ANTHROPIC_MODEL,ANTHROPIC_DEFAULT_SONNET_MODEL,ANTHROPIC_DEFAULT_HAIKU_MODEL,ANTHROPIC_DEFAULT_OPUS_MODEL,API_TIMEOUT_MS",
     "claude-haha": "bun ./bin/claude-haha.mjs",
     "start": "bun ./bin/claude-haha.mjs",
     "docs:dev": "vitepress dev docs",
